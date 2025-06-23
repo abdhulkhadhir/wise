@@ -3,119 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WiSe - Weather Responsive Variable Speed Limit | QUT</title>
+    <title>WiSe: Weather-responsive Variable Speed Limit</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
+        <div class="container">
             <div class="nav-brand">
-                <h2>WiSe</h2>
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1750655584/gpt4o_images/spaq49fi9wbdtp1v5qtj.png" alt="WiSe Logo" class="logo-wise">
+                <span class="brand-text">WiSe</span>
             </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#hero" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#problem" class="nav-link">The Problem</a>
+                <a href="#solution" class="nav-link">Our Solution</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
                 <a href="#objectives" class="nav-link">Objectives</a>
-                <a href="#research" class="nav-link">Research</a>
                 <a href="#team" class="nav-link">Team</a>
                 <a href="#survey" class="nav-link">Survey</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
+            <button class="nav-toggle" id="navToggle">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="container">
-                <h1 class="hero-title animate-fade-in">WiSe</h1>
-                <h2 class="hero-subtitle animate-fade-in-delay">Weather Responsive Variable Speed Limit</h2>
-                <p class="hero-tagline animate-fade-in-delay-2">Towards next generation motorway control</p>
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="https://totallymobileroadworthy.com.au/wp-content/uploads/2024/04/heavy-traffic-during-a-rainy-day-raindrops-on-the-2023-11-27-05-31-13-utc.jpeg" alt="Queensland motorway in wet conditions" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logos">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750655584/gpt4o_images/spaq49fi9wbdtp1v5qtj.png" alt="WiSe Logo" class="hero-logo">
+                </div>
                 
-                <div class="hero-stats">
-                    <div class="stat-card animate-slide-up">
-                        <div class="stat-number">204</div>
-                        <div class="stat-label">Casualty Crashes</div>
-                        <div class="stat-period">2018-2023</div>
+                <div class="problem-statement">
+                    <h2 class="problem-title">Motorway safety becomes especially critical during adverse weather conditions</h2>
+                </div>
+                
+                <h1 class="hero-title">Towards next generation motorway control: Weather responsive variable speed limit (WiSe)</h1>
+                
+                <div class="project-info">
+                    <div class="project-duration">
+                        <h3>2.5 Year Research Project</h3>
+                        <p class="duration-period">(2025 - Mid 2027)</p>
                     </div>
-                    <div class="stat-card animate-slide-up-delay">
-                        <div class="stat-number">83</div>
-                        <div class="stat-label">Fatal/Serious Crashes</div>
-                        <div class="stat-period">2018-2023</div>
-                    </div>
-                    <div class="stat-card animate-slide-up-delay-2">
-                        <div class="stat-number">$138.96M</div>
-                        <div class="stat-label">Economic Cost</div>
-                        <div class="stat-period">Study Period</div>
+                    
+                    <div class="current-phase">
+                        <div class="phase-indicator">
+                            <span class="phase-label">CURRENT PHASE</span>
+                            <span class="phase-name">Survey & Stakeholder Engagement Phase</span>
+                        </div>
                     </div>
                 </div>
-
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">204</div>
+                        <div class="stat-label">Casualty Crashes</div>
+                        <div class="stat-period">5.5 Years (2018-2023)</div>
+                        <div class="stat-context">Wet weather conditions on Queensland motorways</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">83</div>
+                        <div class="stat-label">Fatal & Serious Injury</div>
+                        <div class="stat-period">Crashes in Wet Conditions</div>
+                        <div class="stat-context">Devastating impact on families and communities</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">$138.96M</div>
+                        <div class="stat-label">Economic Cost</div>
+                        <div class="stat-period">Queensland Motorways</div>
+                        <div class="stat-context">Direct economic impact from weather-related crashes</div>
+                    </div>
+                </div>
+                
                 <div class="hero-cta">
-                    <a href="#survey" class="btn btn-primary btn-lg">Participate in Survey</a>
-                    <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
+                    <a href="#survey" class="btn btn--primary btn--lg hero-cta-btn">
+                        Participate in Our Survey
+                    </a>
+                    <p class="cta-subtitle">Your input is crucial to developing safer motorways</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Problem Statement Section -->
+    <section id="problem" class="problem-section">
         <div class="container">
             <div class="section-header">
-                <h2>About the Project</h2>
-                <p>Advanced motorway control systems for safer travel in adverse weather conditions</p>
+                <h2>The Critical Safety Challenge</h2>
+                <p class="section-subtitle">Understanding the scope and impact of weather-related motorway incidents</p>
             </div>
             
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Enhancing Road Safety Through Innovation</h3>
-                    <p>The WiSe project represents a collaborative effort between Queensland University of Technology (QUT) and Transport and Main Roads Queensland (TMR) to develop next-generation motorway control systems.</p>
+            <div class="problem-content">
+                <div class="problem-text">
+                    <p class="lead-text">Queensland's motorway network faces significant safety challenges during adverse weather conditions. Our comprehensive analysis reveals the urgent need for weather-responsive traffic management solutions.</p>
                     
-                    <p>Our research focuses on implementing weather-responsive variable speed limit systems that dynamically adjust speed limits based on real-time weather conditions, significantly improving road safety and traffic flow efficiency.</p>
+                    <div class="problem-stats">
+                        <h3>The Numbers Tell the Story</h3>
+                        <ul class="stats-list">
+                            <li><strong>204 casualty crashes</strong> occurred under wet or rainy conditions</li>
+                            <li><strong>83 Fatal and Serious Injury (FSI) crashes</strong> during the same period</li>
+                            <li><strong>$138.96 million</strong> in estimated economic costs</li>
+                            <li><strong>5.5-year study period</strong> (2018 to June 2023)</li>
+                        </ul>
+                    </div>
                     
-                    <div class="impact-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <div>
-                                <h4>Safety Focus</h4>
-                                <p>Reducing accidents in adverse weather conditions</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-brain"></i>
-                            <div>
-                                <h4>Smart Technology</h4>
-                                <p>AI-powered real-time traffic management</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-chart-line"></i>
-                            <div>
-                                <h4>Data-Driven</h4>
-                                <p>Evidence-based decision making systems</p>
-                            </div>
-                        </div>
+                    <div class="existing-gap">
+                        <h4>Current VSL Systems Fall Short</h4>
+                        <p>Existing Variable Speed Limit systems are not optimized for real-time weather responses, leaving a critical gap in motorway safety management during adverse conditions.</p>
                     </div>
                 </div>
                 
-                <div class="about-visual">
-                    <div class="image-container">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1749145451/pplx_project_search_images/10167046467cadf77e915ff8e3e66cfbcf100bfe.jpg" alt="Smart motorway variable speed limit signs" />
-                        <div class="image-overlay">
-                            <p>Variable Speed Limit Technology in Action</p>
-                        </div>
+                <div class="problem-infographic">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750656698/gpt4o_images/dpoo4hein3gr4n5omsgz.png" alt="Queensland Wet Weather Crash Statistics (2018-2023)" class="infographic-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Overview Section -->
+    <section id="solution" class="solution-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The WiSe Solution</h2>
+                <p class="section-subtitle">Innovative Weather-responsive Variable Speed Limit technology</p>
+            </div>
+            
+            <div class="solution-grid">
+                <div class="solution-infographic">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750656783/gpt4o_images/nnxfwnmxebfijlu8xbya.png" alt="Weather-VSL Problem and Solution Overview" class="infographic-img">
+                </div>
+                
+                <div class="solution-content">
+                    <h3>How Weather-VSL Works</h3>
+                    <p>The WiSe project develops an intelligent framework that adjusts speed limits in real-time based on weather conditions, creating a proactive safety system rather than reactive responses.</p>
+                    
+                    <div class="solution-benefits">
+                        <h4>Expected Benefits</h4>
+                        <ul>
+                            <li>Reduced crash rates during adverse weather</li>
+                            <li>Improved traffic flow management</li>
+                            <li>Enhanced safety for all road users</li>
+                            <li>Economic savings from prevented crashes</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+            
+            <div class="system-architecture">
+                <h3>System Architecture</h3>
+                <div class="architecture-container">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750656528/gpt4o_images/ffc4y8ajslpwugo7pcon.png" alt="Weather-Responsive VSL System Architecture" class="infographic-img large">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Timeline</h2>
+                <p class="section-subtitle">2.5 Years from 2025 to Mid-2027</p>
+            </div>
+            
+            <div class="current-phase-highlight">
+                <div class="phase-card current">
+                    <div class="phase-status">CURRENT PHASE</div>
+                    <h3>Survey & Stakeholder Engagement</h3>
+                    <p>We are currently gathering insights from industry experts, transport authorities, and road users to inform our research direction and ensure practical implementation.</p>
+                    <a href="#survey" class="btn btn--primary">Participate Now</a>
+                </div>
+            </div>
+            
+            <div class="timeline-infographic">
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1750656614/gpt4o_images/vfqpokwkktmevq5wzqme.png" alt="WiSe Project Timeline: 2.5 Years from 2025 to Mid-2027" class="infographic-img large">
             </div>
         </div>
     </section>
@@ -125,87 +196,39 @@
         <div class="container">
             <div class="section-header">
                 <h2>Research Objectives</h2>
-                <p>Four key focus areas driving our innovative approach</p>
+                <p class="section-subtitle">A systematic approach to implementing Weather-VSL technology</p>
             </div>
             
-            <div class="objectives-grid">
-                <div class="objective-card">
-                    <div class="objective-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <h3>Systematic Review</h3>
-                    <p>Perform systematic review of national and international best practices for Weather-VSL through stakeholder interviews, case studies, and literature analysis</p>
-                </div>
-                
-                <div class="objective-card">
-                    <div class="objective-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Safety Evaluation</h3>
-                    <p>Evaluate motorway safety and operations under adverse weather conditions to identify current challenges and implementation opportunities</p>
-                </div>
-                
-                <div class="objective-card">
-                    <div class="objective-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Traffic Modeling</h3>
-                    <p>Model traffic flow breakdown probability under adverse weather conditions to understand critical implementation thresholds</p>
-                </div>
-                
-                <div class="objective-card">
-                    <div class="objective-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Framework Development</h3>
-                    <p>Develop comprehensive Weather-VSL framework for dynamic speed limit adjustment based on real-time weather data</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Approach Section -->
-    <section id="research" class="research">
-        <div class="container">
-            <div class="section-header">
-                <h2>Research Methodology</h2>
-                <p>A systematic four-phase approach to developing innovative solutions</p>
-            </div>
-            
-            <div class="methodology-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">1</div>
-                    <div class="timeline-content">
-                        <h3>Review</h3>
-                        <h4>Literature & Best Practices</h4>
-                        <p>Global analysis of existing systems</p>
+            <div class="objectives-timeline">
+                <div class="objective-item">
+                    <div class="objective-icon">1</div>
+                    <div class="objective-content">
+                        <h3>Systematic Review</h3>
+                        <p>Perform a systematic review of national and international best practices for Weather-VSL through stakeholder interviews, case studies, and literature.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item">
-                    <div class="timeline-marker">2</div>
-                    <div class="timeline-content">
-                        <h3>Engage</h3>
-                        <h4>Stakeholder Interviews</h4>
-                        <p>Industry expert consultation</p>
+                <div class="objective-item">
+                    <div class="objective-icon">2</div>
+                    <div class="objective-content">
+                        <h3>Safety Evaluation</h3>
+                        <p>Evaluate motorway safety and operations under adverse weather conditions to ascertain the current operational challenges and opportunities for Weather-VSL implementation.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item">
-                    <div class="timeline-marker">3</div>
-                    <div class="timeline-content">
-                        <h3>Analyze</h3>
-                        <h4>Data Modeling</h4>
-                        <p>Traffic flow and safety analysis</p>
+                <div class="objective-item">
+                    <div class="objective-icon">3</div>
+                    <div class="objective-content">
+                        <h3>Traffic Modeling</h3>
+                        <p>Model traffic flow breakdown probability under adverse weather conditions to understand critical conditions for implementing Weather-VSL.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item">
-                    <div class="timeline-marker">4</div>
-                    <div class="timeline-content">
-                        <h3>Develop</h3>
-                        <h4>Framework Creation</h4>
-                        <p>Real-time system design</p>
+                <div class="objective-item">
+                    <div class="objective-icon">4</div>
+                    <div class="objective-content">
+                        <h3>Framework Development</h3>
+                        <p>Develop a Weather-VSL framework to adjust speed limits based on real-time weather data.</p>
                     </div>
                 </div>
             </div>
@@ -217,83 +240,73 @@
         <div class="container">
             <div class="section-header">
                 <h2>Research Team</h2>
-                <p>Leading experts in transportation engineering and traffic management</p>
+                <p class="section-subtitle">Collaborative partnership between QUT and TMR</p>
             </div>
             
-            <div class="team-sections">
-                <div class="team-section">
-                    <h3><i class="fas fa-university"></i> QUT Research Team</h3>
+            <div class="team-groups">
+                <div class="team-group">
+                    <h3>QUT Research Team</h3>
                     <div class="team-grid">
                         <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
+                            <div class="member-info">
+                                <h4>Prof. Ashish Bhaskar</h4>
+                                <p class="member-role">Chief Investigator</p>
+                                <a href="mailto:ashish.bhaskar@qut.edu.au" class="member-email">ashish.bhaskar@qut.edu.au</a>
                             </div>
-                            <h4>Prof. Ashish Bhaskar</h4>
-                            <p class="member-role">Chief Investigator</p>
-                            <p class="member-email">ashish.bhaskar@qut.edu.au</p>
-                            <span class="lead-badge">Lead</span>
                         </div>
                         
                         <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
+                            <div class="member-info">
+                                <h4>Dr. Abdhul Khadhir Seyed Hydroos</h4>
+                                <p class="member-role">Research Fellow</p>
                             </div>
-                            <h4>Dr. Abdhul Khadhir Seyed Hydroos</h4>
-                            <p class="member-role">Research Fellow</p>
                         </div>
                         
                         <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
+                            <div class="member-info">
+                                <h4>Prof. Alexander Paz</h4>
+                                <p class="member-role">Co-Investigator</p>
                             </div>
-                            <h4>Prof. Alexander Paz</h4>
-                            <p class="member-role">Co-Investigator</p>
                         </div>
                         
                         <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
+                            <div class="member-info">
+                                <h4>Prof. Shimul Haque</h4>
+                                <p class="member-role">Team Member</p>
                             </div>
-                            <h4>Prof. Shimul Haque</h4>
-                            <p class="member-role">Co-Investigator</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="team-section">
-                    <h3><i class="fas fa-road"></i> TMR Advisory Team</h3>
+                <div class="team-group">
+                    <h3>TMR Advisory Group</h3>
                     <div class="team-grid">
                         <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
+                            <div class="member-info">
+                                <h4>Lachlan Moir</h4>
+                                <p class="member-role">TMR Project Lead</p>
                             </div>
-                            <h4>Lachlan Moir</h4>
-                            <p class="member-role">TMR Project Lead</p>
-                            <span class="lead-badge">TMR Lead</span>
                         </div>
                         
                         <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
+                            <div class="member-info">
+                                <h4>David Gyles</h4>
+                                <p class="member-role">Project Core Advisory Group</p>
                             </div>
-                            <h4>David Gyles</h4>
-                            <p class="member-role">Project Core Advisory Group</p>
                         </div>
                         
                         <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
+                            <div class="member-info">
+                                <h4>William Lee</h4>
+                                <p class="member-role">Project Core Advisory Group</p>
                             </div>
-                            <h4>William Lee</h4>
-                            <p class="member-role">Project Core Advisory Group</p>
                         </div>
                         
                         <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
+                            <div class="member-info">
+                                <h4>Chelsee Klaassen</h4>
+                                <p class="member-role">Project Core Advisory Group</p>
                             </div>
-                            <h4>Chelsee Klaassen</h4>
-                            <p class="member-role">Project Core Advisory Group</p>
                         </div>
                     </div>
                 </div>
@@ -301,34 +314,35 @@
         </div>
     </section>
 
-    <!-- Survey Section -->
-    <section id="survey" class="survey">
-        <div class="survey-background"></div>
-        <div class="survey-overlay"></div>
+    <!-- Enhanced Survey Section -->
+    <section id="survey" class="survey-section">
         <div class="container">
             <div class="survey-content">
-                <h2>Help Shape the Future of Road Safety</h2>
-                <p>Your participation in our research survey is crucial for developing effective weather-responsive speed limit systems. Share your experiences and insights to help us create safer motorways for everyone.</p>
-                
-                <div class="survey-features">
-                    <div class="feature">
-                        <i class="fas fa-clock"></i>
-                        <span>Quick 10-minute survey</span>
+                <div class="survey-text">
+                    <h2>Your Voice Matters</h2>
+                    <p class="survey-lead">We're currently in the <strong>Survey & Stakeholder Engagement Phase</strong> and need your expertise to shape the future of motorway safety.</p>
+                    
+                    <div class="survey-importance">
+                        <h3>Why Your Input is Crucial</h3>
+                        <ul>
+                            <li>Help identify real-world challenges and opportunities</li>
+                            <li>Ensure practical implementation of Weather-VSL systems</li>
+                            <li>Share your experience with adverse weather driving</li>
+                            <li>Contribute to safer Queensland motorways</li>
+                        </ul>
                     </div>
-                    <div class="feature">
-                        <i class="fas fa-user-shield"></i>
-                        <span>Anonymous & confidential</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Direct impact on research</span>
+                    
+                    <div class="survey-cta">
+                        <a href="https://qsurvey.qut.edu.au/jfe/form/SV_4Zn1u8WTusgZb70" target="_blank" class="btn btn--primary btn--lg survey-btn">
+                            Take the Survey Now
+                        </a>
+                        <p class="survey-time">Takes approximately 10-15 minutes</p>
                     </div>
                 </div>
                 
-                <a href="https://qsurvey.qut.edu.au/jfe/form/SV_4Zn1u8WTusgZb70" target="_blank" class="btn btn-primary btn-xl survey-btn">
-                    <i class="fas fa-external-link-alt"></i>
-                    Take Survey Now
-                </a>
+                <div class="survey-infographic">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750656865/gpt4o_images/kfg0i7x6k8socydnste3.png" alt="Stakeholder Survey and Engagement Call-to-Action" class="infographic-img">
+                </div>
             </div>
         </div>
     </section>
@@ -337,63 +351,16 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Get in Touch</h2>
-                <p>Connect with our research team for inquiries and collaboration opportunities</p>
+                <h2>Contact Us</h2>
+                <p class="section-subtitle">Get in touch with the WiSe research team</p>
             </div>
             
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Project Contact</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-user"></i>
-                        <div>
-                            <h4>Prof. Ashish Bhaskar</h4>
-                            <p>Chief Investigator</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:ashish.bhaskar@qut.edu.au">ashish.bhaskar@qut.edu.au</a></p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-university"></i>
-                        <div>
-                            <h4>Institution</h4>
-                            <p>Queensland University of Technology<br>School of Civil and Environmental Engineering</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>Send a Message</h3>
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-full-width">Send Message</button>
-                    </form>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Chief Investigator</h3>
+                    <p><strong>Prof. Ashish Bhaskar</strong></p>
+                    <p>Queensland University of Technology</p>
+                    <a href="mailto:ashish.bhaskar@qut.edu.au">ashish.bhaskar@qut.edu.au</a>
                 </div>
             </div>
         </div>
@@ -403,30 +370,16 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>WiSe Project</h4>
-                    <p>Weather Responsive Variable Speed Limit research initiative by QUT and TMR.</p>
+                <div class="footer-brand">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750655584/gpt4o_images/spaq49fi9wbdtp1v5qtj.png" alt="WiSe Logo" class="footer-logo">
+                    <div class="footer-text">
+                        <p>Weather-responsive Variable Speed Limit Research</p>
+                        <p class="footer-duration">2025 - Mid 2027 | Currently in Survey Phase</p>
+                    </div>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#objectives">Objectives</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#survey">Survey</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <p>&copy; 2025 Queensland University of Technology. All rights reserved.</p>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Prof. Ashish Bhaskar<br>
-                    <a href="mailto:ashish.bhaskar@qut.edu.au">ashish.bhaskar@qut.edu.au</a></p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Queensland University of Technology. All rights reserved.</p>
             </div>
         </div>
     </footer>
